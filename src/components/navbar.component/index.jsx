@@ -22,18 +22,19 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/synfuse'>
+            <NavLink to='/'>
                 Home
             </NavLink>
         </Typography>
         <Typography
           as="li"
           variant="small"
-          href='#whysynfuse'
           color="blue-gray"
           className="p-1 font-medium"
         >
-            Why SynFuse?
+            <a href="#whysynfuse">
+              Why SynFuse?
+            </a>
         </Typography>
         <Typography
           as="li"
