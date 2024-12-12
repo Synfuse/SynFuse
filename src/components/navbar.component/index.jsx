@@ -22,9 +22,9 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/'>
-                Home
-            </NavLink>
+            <a href="#">
+              Home
+            </a>
         </Typography>
         <Typography
           as="li"
@@ -42,9 +42,9 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/aboutus'>
-                About Us
-            </NavLink>
+            <a href="#">
+              About Us
+            </a>
         </Typography>
         <Typography
           as="li"
@@ -52,9 +52,9 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/products'>
-                Products
-            </NavLink>
+            <a href="#">
+              product
+            </a>
         </Typography>
         <Typography
           as="li"
@@ -62,9 +62,9 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/team'>
-                Team
-            </NavLink>
+            <a href="#">
+              Team
+            </a>
         </Typography>
         <Typography
           as="li"
@@ -72,9 +72,7 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/contactus'>
-                Contact Us
-            </NavLink>
+          <a href="#">Contact Us</a>
         </Typography>
       </ul>
     );
