@@ -12,7 +12,7 @@ function App() {
       <Card className="mt-6 w-96">
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mb-2">
-            UI/UX Review Check
+            Pull Check
           </Typography>
           <Typography>
             The place is close to Barceloneta Beach and bus stop just 2 min by
