@@ -1,30 +1,31 @@
+import React from "react";
 import "./App.css";
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import NavBarComponent from "./components/navbar.component/index";
+import SynFuseHome from "./components/synfuse.page/index";
+import AboutUs from "./components/aboutus.page/index";
+import Products from "./components/products.page/index";
+import SynFuseTeam from "./components/team.page/index";
+import ContactUs from "./components/contactus.page/index";
+
+
 function App() {
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <Card className="mt-6 w-96">
-        <CardBody>
-          <Typography variant="h5" color="blue-gray" className="mb-2">
-            Pull Check
-          </Typography>
-          <Typography>
-            The place is close to Barceloneta Beach and bus stop just 2 min by
-            walk and near to &quot;Naviglio&quot; where you can enjoy the main
-            night life in Barcelona.
-          </Typography>
-        </CardBody>
-        <CardFooter className="pt-0">
-          <Button>Pull Check Read More</Button>
-        </CardFooter>
-      </Card>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path='/' element={<NavBarComponent />}>
+            <Route index element={<SynFuseHome />}/>
+            <Route path='/aboutus' element={<AboutUs />}/>
+            <Route path='/products' element={<Products />}/>
+            <Route path='/team' element={<SynFuseTeam />}/>
+            <Route path='/contactus' element={<ContactUs />}/>
+          </Route>
+        </Routes>
+      </Router>
+    </>
   );
 }
 
