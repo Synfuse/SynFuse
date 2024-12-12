@@ -21,7 +21,7 @@ function App() {
           </Typography>
         </CardBody>
         <CardFooter className="pt-0">
-          <Button>Read More</Button>
+          <Button>Pull Check Read More</Button>
         </CardFooter>
       </Card>
     </div>
