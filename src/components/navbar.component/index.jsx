@@ -22,18 +22,9 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/synfuse'>
-                Home
-            </NavLink>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          href='#whysynfuse'
-          color="blue-gray"
-          className="p-1 font-medium"
-        >
-            Why SynFuse?
+            <a href="#">
+              Home
+            </a>
         </Typography>
         <Typography
           as="li"
@@ -41,9 +32,9 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/aboutus'>
-                About Us
-            </NavLink>
+            <a href="#whysynfuse">
+              Why SynFuse?
+            </a>
         </Typography>
         <Typography
           as="li"
@@ -51,9 +42,9 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/products'>
-                Products
-            </NavLink>
+            <a href="#">
+              About Us
+            </a>
         </Typography>
         <Typography
           as="li"
@@ -61,9 +52,9 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/team'>
-                Team
-            </NavLink>
+            <a href="#">
+              product
+            </a>
         </Typography>
         <Typography
           as="li"
@@ -71,9 +62,17 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-            <NavLink to='/contactus'>
-                Contact Us
-            </NavLink>
+            <a href="#">
+              Team
+            </a>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-medium"
+        >
+          <a href="#">Contact Us</a>
         </Typography>
       </ul>
     );
